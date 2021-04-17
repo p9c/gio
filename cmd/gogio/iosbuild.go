@@ -427,10 +427,14 @@ func archiveIOS(tmpDir, target, frameworkRoot string, bi *buildInfo) error {
 			return err
 		}
 		lib := filepath.Join(tmpDir, "gio-"+a)
+		ldFlags := "-ldflags=-w -s "
+		if *noStrip {
+			ldFlags = "-ldflags="
+		}
 		cmd := exec.Command(
 			"go",
 			"build",
-			"-ldflags=-s -w "+bi.ldflags,
+			ldFlags+bi.ldflags,
 			"-buildmode=c-archive",
 			"-o", lib,
 			"-tags", tags,
@@ -458,7 +462,7 @@ func archiveIOS(tmpDir, target, frameworkRoot string, bi *buildInfo) error {
 	if _, err := runCmd(lipo); err != nil {
 		return err
 	}
-	appDir, err := runCmd(exec.Command("go", "list", "-f", "{{.Dir}}", "gioui.org/app/internal/wm"))
+	appDir, err := runCmd(exec.Command("go", "list", "-f", "{{.Dir}}", "github.com/p9c/gio/app/internal/wm"))
 	if err != nil {
 		return err
 	}

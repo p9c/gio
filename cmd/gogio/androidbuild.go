@@ -98,7 +98,7 @@ func buildAndroid(tmpDir string, bi *buildInfo) error {
 		androidjar: filepath.Join(platform, "android.jar"),
 	}
 	perms := []string{"default"}
-	const permPref = "gioui.org/app/permission/"
+	const permPref = "github.com/p9c/gio/app/permission/"
 	cfg := &packages.Config{
 		Mode: packages.NeedName +
 			packages.NeedFiles +
@@ -218,10 +218,14 @@ func compileAndroid(tmpDir string, tools *androidTools, bi *buildInfo) (err erro
 			return fmt.Errorf("failed to create %q: %v", archDir, err)
 		}
 		libFile := filepath.Join(archDir, "libgio.so")
+		ldFlags := "-ldflags=-w -s "
+		if *noStrip {
+			ldFlags = "-ldflags="
+		}
 		cmd := exec.Command(
 			"go",
 			"build",
-			"-ldflags=-w -s "+bi.ldflags,
+			ldFlags+bi.ldflags,
 			"-buildmode=c-shared",
 			"-tags", bi.tags,
 			"-o", libFile,
@@ -240,7 +244,7 @@ func compileAndroid(tmpDir string, tools *androidTools, bi *buildInfo) (err erro
 			return err
 		})
 	}
-	appDir, err := runCmd(exec.Command("go", "list", "-f", "{{.Dir}}", "gioui.org/app/internal/wm"))
+	appDir, err := runCmd(exec.Command("go", "list", "-f", "{{.Dir}}", "github.com/p9c/gio/app/internal/wm"))
 	if err != nil {
 		return err
 	}
