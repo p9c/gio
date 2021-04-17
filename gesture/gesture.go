@@ -16,16 +16,17 @@ import (
 	"time"
 
 	"gioui.org/f32"
-	"gioui.org/internal/fling"
 	"gioui.org/io/event"
 	"gioui.org/io/key"
 	"gioui.org/io/pointer"
 	"gioui.org/op"
 	"gioui.org/unit"
+
+	"gioui.org/internal/fling"
 )
 
 // The duration is somewhat arbitrary.
-const doubleClickDuration = 200 * time.Millisecond
+const doubleClickDuration = 300 * time.Millisecond
 
 // Click detects click gestures in the form
 // of ClickEvents.
@@ -41,7 +42,8 @@ type Click struct {
 	// entered tracks whether the pointer is inside the gesture.
 	entered bool
 	// pid is the pointer.ID.
-	pid pointer.ID
+	pid    pointer.ID
+	Button pointer.Buttons
 }
 
 type ClickState uint8
@@ -57,6 +59,7 @@ type ClickEvent struct {
 	// NumClicks records successive clicks occurring
 	// within a short duration of each other.
 	NumClicks int
+	Button    pointer.Buttons
 }
 
 type ClickType uint8
@@ -141,6 +144,7 @@ func (c *Click) Pressed() bool {
 func (c *Click) Events(q event.Queue) []ClickEvent {
 	var events []ClickEvent
 	for _, evt := range q.Events(c) {
+		// I.S(evt)
 		e, ok := evt.(pointer.Event)
 		if !ok {
 			continue
@@ -152,13 +156,17 @@ func (c *Click) Events(q event.Queue) []ClickEvent {
 			}
 			c.pressed = false
 			if c.entered {
-				if e.Time-c.clickedAt < doubleClickDuration {
+				if e.Time-c.clickedAt < doubleClickDuration ||
+					(c.clicks == 2 && e.Time-c.clickedAt < doubleClickDuration*2) {
 					c.clicks++
 				} else {
 					c.clicks = 1
 				}
 				c.clickedAt = e.Time
-				events = append(events, ClickEvent{Type: TypeClick, Position: e.Position, Source: e.Source, Modifiers: e.Modifiers, NumClicks: c.clicks})
+				events = append(events, ClickEvent{
+					Type: TypeClick, Position: e.Position, Source: e.Source, Modifiers: e.Modifiers,
+					Button: e.Buttons, NumClicks: c.clicks,
+				})
 			} else {
 				events = append(events, ClickEvent{Type: TypeCancel})
 			}
@@ -173,9 +181,9 @@ func (c *Click) Events(q event.Queue) []ClickEvent {
 			if c.pressed {
 				break
 			}
-			if e.Source == pointer.Mouse && e.Buttons != pointer.ButtonPrimary {
-				break
-			}
+			// if e.Source == pointer.Mouse && e.Buttons != pointer.ButtonPrimary {
+			// 	break
+			// }
 			if !c.entered {
 				c.pid = e.PointerID
 			}
@@ -183,7 +191,9 @@ func (c *Click) Events(q event.Queue) []ClickEvent {
 				break
 			}
 			c.pressed = true
-			events = append(events, ClickEvent{Type: TypePress, Position: e.Position, Source: e.Source, Modifiers: e.Modifiers})
+			events = append(events, ClickEvent{
+				Type: TypePress, Position: e.Position, Source: e.Source, Modifiers: e.Modifiers, Button: e.Buttons,
+			})
 		case pointer.Leave:
 			if !c.pressed {
 				c.pid = e.PointerID

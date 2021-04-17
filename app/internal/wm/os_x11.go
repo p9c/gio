@@ -493,10 +493,11 @@ func (h *x11EventHandler) handleEvents() bool {
 			case C.ButtonPress:
 				w.pointerBtns |= btn
 			case C.ButtonRelease:
-				w.pointerBtns &^= btn
+				w.pointerBtns |= btn
 			}
 			ev.Buttons = w.pointerBtns
 			w.w.Event(ev)
+			w.pointerBtns = 0
 		case C.MotionNotify:
 			mevt := (*C.XMotionEvent)(unsafe.Pointer(xev))
 			w.w.Event(pointer.Event{
