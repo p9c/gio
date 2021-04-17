@@ -1,4 +1,4 @@
-module gioui.org
+module github.com/p9c/gio
 
 go 1.14
 

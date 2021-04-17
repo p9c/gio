@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="341a2c0d-ad98-4edf-a3db-c4233e075c4d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app_android.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/app_android.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/datadir_android.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/datadir_android.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/log/log_ios.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/log/log_ios.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/d3d11_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/d3d11_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/egl_android.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/egl_android.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/egl_wayland.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/egl_wayland.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/egl_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/egl_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/egl_x11.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/egl_x11.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/gl_ios.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/gl_ios.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/gl_js.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/gl_js.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/gl_macos.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/gl_macos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_ios.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_ios.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_js.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_js.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_macos.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_macos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_wayland.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_wayland.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/os_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/os_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/wm/window.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/wm/window.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/xkb/xkb_unix.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/xkb/xkb_unix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/loop.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/loop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/permission/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/permission/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/window.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/window.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/androidbuild.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/androidbuild.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/build_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/build_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/e2e_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/e2e_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/iosbuild.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/iosbuild.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/js_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/js_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gogio/testdata/testdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gogio/testdata/testdata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/gofont/gofont.go" beforeDir="false" afterPath="$PROJECT_DIR$/font/gofont/gofont.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/opentype/opentype.go" beforeDir="false" afterPath="$PROJECT_DIR$/font/opentype/opentype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/opentype/opentype_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/font/opentype/opentype_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/gesture.go" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/gesture.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/gesture_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/gesture_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/caches.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/caches.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/clip.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/clip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/compute.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/compute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/gpu.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/gpu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/driver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/driver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless_egl.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless_egl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless_js.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless_js.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/headless_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/headless_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/headless/shaders.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/headless/shaders.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/convertshaders/glslcc.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/convertshaders/glslcc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/convertshaders/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/convertshaders/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/d3d11/d3d11_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/d3d11/d3d11_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/driver/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/driver/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/opengl/opengl.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/opengl/opengl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/rendertest/render_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/rendertest/render_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/rendertest/transform_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/rendertest/transform_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/internal/rendertest/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/internal/rendertest/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/shaders.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/shaders.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpu/timer.go" beforeDir="false" afterPath="$PROJECT_DIR$/gpu/timer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/d3d11/d3d11_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/d3d11/d3d11_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/egl/egl.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/egl/egl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/egl/egl_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/egl/egl_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/fling/animation.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/fling/animation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/ops/ops.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/ops/ops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/ops/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/ops/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/scene/scene.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/scene/scene.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/srgb/srgb.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/srgb/srgb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/stroke/dash.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/stroke/dash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/stroke/stroke.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/stroke/stroke.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/clipboard/clipboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/clipboard/clipboard.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/key/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/key/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/profile/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/profile/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/clipboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/clipboard.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/key_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/key_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/pointer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/pointer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/pointer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/system/system.go" beforeDir="false" afterPath="$PROJECT_DIR$/io/system/system.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/flex.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/flex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/layout.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/layout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/layout_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/layout_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/list.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/layout/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/clip/clip.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/clip/clip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/clip/clip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/clip/clip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/clip/shapes.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/clip/shapes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/clip/stroke.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/clip/stroke.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/op.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/op.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op/paint/paint.go" beforeDir="false" afterPath="$PROJECT_DIR$/op/paint/paint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/lru.go" beforeDir="false" afterPath="$PROJECT_DIR$/text/lru.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/text/lru_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/shaper.go" beforeDir="false" afterPath="$PROJECT_DIR$/text/shaper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/text.go" beforeDir="false" afterPath="$PROJECT_DIR$/text/text.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/bool.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/bool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/border.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/border.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/button.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/button.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/editor.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/editor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/editor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/editor_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/enum.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/enum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/fit.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/fit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/fit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/fit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/float.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/float.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/icon.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/icon.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/icon_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/icon_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/image.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/image.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/image_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/image_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/label.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/label.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/button.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/button.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/checkable.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/checkable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/checkbox.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/checkbox.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/editor.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/editor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/label.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/label.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/loader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/progressbar.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/progressbar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/radiobutton.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/radiobutton.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/slider.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/slider.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/switch.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/switch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/material/theme.go" beforeDir="false" afterPath="$PROJECT_DIR$/widget/material/theme.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
+  <component name="ProjectId" id="1qfUFXPLvTbyqUK0Vi4HMW96hk4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="gioui.org" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="github.com/p9c/gio" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="gioui.org" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/p9c/gio" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

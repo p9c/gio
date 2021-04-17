@@ -37,6 +37,7 @@ var (
 	iconPath      = flag.String("icon", "", "specify an icon for iOS and Android")
 	signKey       = flag.String("signkey", "", "specify the path of the keystore to be used to sign Android apk files.")
 	signPass      = flag.String("signpass", "", "specify the password to decrypt the signkey.")
+	noStrip       = flag.Bool("nostrip", false, "leave debugging symbols in produced .so files")
 )
 
 func main() {
