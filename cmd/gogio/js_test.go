@@ -16,7 +16,7 @@ import (
 	"github.com/chromedp/cdproto/runtime"
 	"github.com/chromedp/chromedp"
 
-	_ "github.com/p9c/gio/unit" // the build tool adds it to go.mod, so keep it there
+	_ "gioui.org/unit" // the build tool adds it to go.mod, so keep it there
 )
 
 type JSTestDriver struct {
