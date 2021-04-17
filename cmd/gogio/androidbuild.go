@@ -218,14 +218,10 @@ func compileAndroid(tmpDir string, tools *androidTools, bi *buildInfo) (err erro
 			return fmt.Errorf("failed to create %q: %v", archDir, err)
 		}
 		libFile := filepath.Join(archDir, "libgio.so")
-		ldFlags := "-ldflags=-w -s "
-		if *noStrip {
-			ldFlags = "-ldflags="
-		}
 		cmd := exec.Command(
 			"go",
 			"build",
-			ldFlags+bi.ldflags,
+			"-ldflags=-w -s "+bi.ldflags,
 			"-buildmode=c-shared",
 			"-tags", bi.tags,
 			"-o", libFile,

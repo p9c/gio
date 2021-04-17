@@ -427,14 +427,10 @@ func archiveIOS(tmpDir, target, frameworkRoot string, bi *buildInfo) error {
 			return err
 		}
 		lib := filepath.Join(tmpDir, "gio-"+a)
-		ldFlags := "-ldflags=-w -s "
-		if *noStrip {
-			ldFlags = "-ldflags="
-		}
 		cmd := exec.Command(
 			"go",
 			"build",
-			ldFlags+bi.ldflags,
+			"-ldflags=-s -w "+bi.ldflags,
 			"-buildmode=c-archive",
 			"-o", lib,
 			"-tags", tags,

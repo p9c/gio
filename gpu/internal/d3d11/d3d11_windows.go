@@ -324,7 +324,7 @@ func (b *Backend) NewInputLayout(vertexShader driver.ShaderSources, layout []dri
 			case 4:
 				format = d3d11.DXGI_FORMAT_R32G32B32A32_FLOAT
 			default:
-				panic("unsupported float data size")
+				panic("unsupported data size")
 			}
 		case driver.DataTypeShort:
 			switch l.Size {
@@ -333,7 +333,7 @@ func (b *Backend) NewInputLayout(vertexShader driver.ShaderSources, layout []dri
 			case 2:
 				format = d3d11.DXGI_FORMAT_R16G16_SINT
 			default:
-				panic("unsupported float data size")
+				panic("unsupported data size")
 			}
 		default:
 			panic("unsupported data type")
@@ -345,7 +345,7 @@ func (b *Backend) NewInputLayout(vertexShader driver.ShaderSources, layout []dri
 			AlignedByteOffset: uint32(l.Offset),
 		}
 	}
-	l, err := b.dev.CreateInputLayout(descs, vertexShader.HLSL)
+	l, err := b.dev.CreateInputLayout(descs, []byte(vertexShader.HLSL))
 	if err != nil {
 		return nil, err
 	}
@@ -398,11 +398,11 @@ func (b *Backend) NewComputeProgram(shader driver.ShaderSources) (driver.Program
 }
 
 func (b *Backend) NewProgram(vertexShader, fragmentShader driver.ShaderSources) (driver.Program, error) {
-	vs, err := b.dev.CreateVertexShader(vertexShader.HLSL)
+	vs, err := b.dev.CreateVertexShader([]byte(vertexShader.HLSL))
 	if err != nil {
 		return nil, err
 	}
-	ps, err := b.dev.CreatePixelShader(fragmentShader.HLSL)
+	ps, err := b.dev.CreatePixelShader([]byte(fragmentShader.HLSL))
 	if err != nil {
 		return nil, err
 	}

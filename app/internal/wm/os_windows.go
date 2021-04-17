@@ -66,6 +66,7 @@ type window struct {
 const (
 	_WM_REDRAW = windows.WM_USER + iota
 	_WM_CURSOR
+	_WM_OPTION
 )
 
 type gpuAPI struct {
@@ -248,7 +249,14 @@ func windowProc(hwnd syscall.Handle, msg uint32, wParam, lParam uintptr) uintptr
 			if msg == windows.WM_KEYUP || msg == windows.WM_SYSKEYUP {
 				e.State = key.Release
 			}
+
 			w.w.Event(e)
+
+			if (wParam == windows.VK_F10) && (msg == windows.WM_SYSKEYDOWN || msg == windows.WM_SYSKEYUP) {
+				// Reserve F10 for ourselves, and don't let it open the system menu. Other Windows programs
+				// such as cmd.exe and graphical debuggers also reserve F10.
+				return 0
+			}
 		}
 	case windows.WM_LBUTTONDOWN:
 		w.pointerButton(pointer.ButtonPrimary, true, lParam, getModifiers())
@@ -317,6 +325,8 @@ func windowProc(hwnd syscall.Handle, msg uint32, wParam, lParam uintptr) uintptr
 			windows.SetCursor(w.cursor)
 			return windows.TRUE
 		}
+	case _WM_OPTION:
+		w.setOptions()
 	}
 
 	return windows.DefWindowProc(hwnd, msg, wParam, lParam)
@@ -520,6 +530,18 @@ func (w *window) readClipboard() error {
 }
 
 func (w *window) Option(opts *Options) {
+	w.mu.Lock()
+	w.opts = opts
+	w.mu.Unlock()
+	if err := windows.PostMessage(w.hwnd, _WM_OPTION, 0, 0); err != nil {
+		panic(err)
+	}
+}
+
+func (w *window) setOptions() {
+	w.mu.Lock()
+	opts := w.opts
+	w.mu.Unlock()
 	if o := opts.Size; o != nil {
 		dpi := windows.GetSystemDPI()
 		cfg := configForDPI(dpi)
