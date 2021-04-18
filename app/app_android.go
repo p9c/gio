@@ -3,7 +3,7 @@
 package app
 
 import (
-	"gioui.org/app/internal/wm"
+	"github.com/p9c/gio/app/internal/wm"
 )
 
 type ViewEvent = wm.ViewEvent

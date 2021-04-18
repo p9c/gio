@@ -21,14 +21,14 @@ import (
 
 	syscall "golang.org/x/sys/unix"
 
-	"gioui.org/app/internal/xkb"
-	"gioui.org/f32"
-	"gioui.org/internal/fling"
-	"gioui.org/io/clipboard"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/io/system"
-	"gioui.org/unit"
+	"github.com/p9c/gio/app/internal/xkb"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/fling"
+	"github.com/p9c/gio/io/clipboard"
+	"github.com/p9c/gio/io/key"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/io/system"
+	"github.com/p9c/gio/unit"
 )
 
 // Use wayland-scanner to generate glue code for the xdg-shell and xdg-decoration extensions.

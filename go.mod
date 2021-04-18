@@ -1,11 +1,10 @@
-module gioui.org
+module github.com/p9c/gio
 
-go 1.14
+go 1.16
 
 require (
-	golang.org/x/exp v0.0.0-20191002040644-a1355ae1e2c3
-	golang.org/x/image v0.0.0-20200618115811-c13761719519
-	golang.org/x/sys v0.0.0-20210304124612-50617c2ba197
+	golang.org/x/exp v0.0.0-20210417010653-0739314eea07
+	golang.org/x/image v0.0.0-20210220032944-ac19c3e999fb
+	golang.org/x/sys v0.0.0-20210415045647-66c3f260301c
 )
 
-replace gioui.org => ./

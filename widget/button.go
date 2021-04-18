@@ -6,12 +6,12 @@ import (
 	"image"
 	"time"
 
-	"gioui.org/f32"
-	"gioui.org/gesture"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/layout"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/gesture"
+	"github.com/p9c/gio/io/key"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
 )
 
 // Clickable represents a clickable area.

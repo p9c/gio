@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"gioui.org/gpu/internal/driver"
+	"github.com/p9c/gio/gpu/internal/driver"
 )
 
 // GLSLCC is a shader cross-compilation tool.

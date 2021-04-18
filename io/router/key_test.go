@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"testing"
 
-	"gioui.org/io/event"
-	"gioui.org/io/key"
-	"gioui.org/op"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/io/key"
+	"github.com/p9c/gio/op"
 )
 
 func TestKeyWakeup(t *testing.T) {

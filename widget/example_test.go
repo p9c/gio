@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"image"
 
-	"gioui.org/f32"
-	"gioui.org/io/pointer"
-	"gioui.org/io/router"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/widget"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/io/router"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/widget"
 )
 
 func ExampleClickable_passthrough() {

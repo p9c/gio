@@ -6,15 +6,15 @@ import (
 	"image"
 	"image/color"
 
-	"gioui.org/f32"
-	"gioui.org/internal/f32color"
-	"gioui.org/io/pointer"
-	"gioui.org/layout"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
-	"gioui.org/text"
-	"gioui.org/unit"
-	"gioui.org/widget"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/f32color"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op/clip"
+	"github.com/p9c/gio/op/paint"
+	"github.com/p9c/gio/text"
+	"github.com/p9c/gio/unit"
+	"github.com/p9c/gio/widget"
 )
 
 type checkable struct {

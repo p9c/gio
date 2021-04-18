@@ -69,7 +69,7 @@ func TestEndToEnd(t *testing.T) {
 	t.Parallel()
 
 	const (
-		testdataWithGoImportPkgPath = "gioui.org/cmd/gogio/testdata"
+		testdataWithGoImportPkgPath = "github.com/p9c/gio/cmd/gogio/testdata"
 		testdataWithRelativePkgPath = "testdata/testdata.go"
 	)
 	// Keep this list local, to not reuse TestDriver objects.

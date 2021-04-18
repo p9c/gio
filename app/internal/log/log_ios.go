@@ -17,7 +17,7 @@ import (
 	"log"
 	"unsafe"
 
-	_ "gioui.org/internal/cocoainit"
+	_ "github.com/p9c/gio/internal/cocoainit"
 )
 
 func init() {

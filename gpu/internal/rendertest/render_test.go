@@ -8,11 +8,11 @@ import (
 
 	"golang.org/x/image/colornames"
 
-	"gioui.org/f32"
-	"gioui.org/internal/f32color"
-	"gioui.org/op"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/f32color"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/op/clip"
+	"github.com/p9c/gio/op/paint"
 )
 
 func TestTransformMacro(t *testing.T) {

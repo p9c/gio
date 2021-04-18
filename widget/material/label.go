@@ -5,11 +5,11 @@ package material
 import (
 	"image/color"
 
-	"gioui.org/layout"
-	"gioui.org/op/paint"
-	"gioui.org/text"
-	"gioui.org/unit"
-	"gioui.org/widget"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op/paint"
+	"github.com/p9c/gio/text"
+	"github.com/p9c/gio/unit"
+	"github.com/p9c/gio/widget"
 )
 
 type LabelStyle struct {

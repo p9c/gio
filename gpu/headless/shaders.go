@@ -2,7 +2,7 @@
 
 package headless
 
-import "gioui.org/gpu/internal/driver"
+import "github.com/p9c/gio/gpu/internal/driver"
 
 var (
 	shader_input_vert = driver.ShaderSources{

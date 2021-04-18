@@ -27,7 +27,7 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
-	"gioui.org/io/pointer"
+	"github.com/p9c/gio/io/pointer"
 )
 
 // displayLink is the state for a display link (CVDisplayLinkRef on macOS,

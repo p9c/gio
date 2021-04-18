@@ -6,14 +6,14 @@ import (
 	"math"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/font/gofont"
-	"gioui.org/gpu/headless"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/clip"
-	"gioui.org/op/paint"
-	"gioui.org/widget/material"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/font/gofont"
+	"github.com/p9c/gio/gpu/headless"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/op/clip"
+	"github.com/p9c/gio/op/paint"
+	"github.com/p9c/gio/widget/material"
 )
 
 // use some global variables for benchmarking so as to not pollute

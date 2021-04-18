@@ -7,12 +7,12 @@ import (
 	"image"
 	"math"
 
-	"gioui.org/f32"
-	"gioui.org/internal/opconst"
-	"gioui.org/internal/ops"
-	"gioui.org/internal/scene"
-	"gioui.org/internal/stroke"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/opconst"
+	"github.com/p9c/gio/internal/ops"
+	"github.com/p9c/gio/internal/scene"
+	"github.com/p9c/gio/internal/stroke"
+	"github.com/p9c/gio/op"
 )
 
 // Op represents a clip area. Op intersects the current clip area with

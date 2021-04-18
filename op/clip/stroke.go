@@ -6,8 +6,8 @@ import (
 	"encoding/binary"
 	"math"
 
-	"gioui.org/internal/opconst"
-	"gioui.org/op"
+	"github.com/p9c/gio/internal/opconst"
+	"github.com/p9c/gio/op"
 )
 
 // Stroke represents a stroked path.

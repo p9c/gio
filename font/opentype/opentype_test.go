@@ -15,9 +15,9 @@ import (
 	"golang.org/x/image/font/sfnt"
 	"golang.org/x/image/math/fixed"
 
-	"gioui.org/internal/ops"
-	"gioui.org/op"
-	"gioui.org/text"
+	"github.com/p9c/gio/internal/ops"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/text"
 )
 
 func TestCollectionAsFace(t *testing.T) {

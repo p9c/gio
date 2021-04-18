@@ -1,8 +1,8 @@
 package gpu
 
 import (
-	"gioui.org/f32"
-	"gioui.org/internal/stroke"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/stroke"
 )
 
 type quadSplitter struct {

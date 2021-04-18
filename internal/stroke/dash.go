@@ -10,7 +10,7 @@ import (
 	"math"
 	"sort"
 
-	"gioui.org/f32"
+	"github.com/p9c/gio/f32"
 )
 
 type DashOp struct {

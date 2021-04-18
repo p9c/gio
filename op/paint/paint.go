@@ -9,10 +9,10 @@ import (
 	"image/draw"
 	"math"
 
-	"gioui.org/f32"
-	"gioui.org/internal/opconst"
-	"gioui.org/op"
-	"gioui.org/op/clip"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/internal/opconst"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/op/clip"
 )
 
 // ImageOp sets the brush to an image.

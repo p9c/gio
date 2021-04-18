@@ -9,10 +9,10 @@ import (
 
 	"golang.org/x/exp/shiny/iconvg"
 
-	"gioui.org/internal/f32color"
-	"gioui.org/layout"
-	"gioui.org/op/paint"
-	"gioui.org/unit"
+	"github.com/p9c/gio/internal/f32color"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op/paint"
+	"github.com/p9c/gio/unit"
 )
 
 type Icon struct {

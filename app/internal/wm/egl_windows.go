@@ -3,7 +3,7 @@
 package wm
 
 import (
-	"gioui.org/internal/egl"
+	"github.com/p9c/gio/internal/egl"
 )
 
 type glContext struct {

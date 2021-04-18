@@ -5,11 +5,11 @@ package widget
 import (
 	"image"
 
-	"gioui.org/f32"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/paint"
-	"gioui.org/unit"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/op/paint"
+	"github.com/p9c/gio/unit"
 )
 
 // Image is a widget that displays an image.

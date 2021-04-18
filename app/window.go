@@ -8,16 +8,16 @@ import (
 	"image"
 	"time"
 
-	"gioui.org/io/event"
-	"gioui.org/io/pointer"
-	"gioui.org/io/profile"
-	"gioui.org/io/router"
-	"gioui.org/io/system"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/io/profile"
+	"github.com/p9c/gio/io/router"
+	"github.com/p9c/gio/io/system"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/unit"
 
-	_ "gioui.org/app/internal/log"
-	"gioui.org/app/internal/wm"
+	_ "github.com/p9c/gio/app/internal/log"
+	"github.com/p9c/gio/app/internal/wm"
 )
 
 // WindowOption configures a wm.

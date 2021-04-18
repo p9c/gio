@@ -3,10 +3,10 @@ package widget
 import (
 	"image"
 
-	"gioui.org/gesture"
-	"gioui.org/io/pointer"
-	"gioui.org/layout"
-	"gioui.org/op"
+	"github.com/p9c/gio/gesture"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
 )
 
 type Enum struct {

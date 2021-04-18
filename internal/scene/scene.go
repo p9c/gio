@@ -9,7 +9,7 @@ import (
 	"math"
 	"unsafe"
 
-	"gioui.org/f32"
+	"github.com/p9c/gio/f32"
 )
 
 type Op uint32

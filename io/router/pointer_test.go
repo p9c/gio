@@ -8,11 +8,11 @@ import (
 	"reflect"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/key"
-	"gioui.org/io/pointer"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/io/key"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/op"
 )
 
 func TestPointerWakeup(t *testing.T) {

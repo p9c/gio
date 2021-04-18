@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"gioui.org/internal/gl"
+	"github.com/p9c/gio/internal/gl"
 )
 
 // See gpu/api.go for documentation for the API types

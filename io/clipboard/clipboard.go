@@ -3,9 +3,9 @@
 package clipboard
 
 import (
-	"gioui.org/internal/opconst"
-	"gioui.org/io/event"
-	"gioui.org/op"
+	"github.com/p9c/gio/internal/opconst"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/op"
 )
 
 // Event is generated when the clipboard content is requested.

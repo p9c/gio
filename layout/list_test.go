@@ -6,11 +6,11 @@ import (
 	"image"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/pointer"
-	"gioui.org/io/router"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/io/pointer"
+	"github.com/p9c/gio/io/router"
+	"github.com/p9c/gio/op"
 )
 
 func TestListPosition(t *testing.T) {

@@ -5,11 +5,11 @@ package layout
 import (
 	"time"
 
-	"gioui.org/f32"
-	"gioui.org/io/event"
-	"gioui.org/io/system"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/io/event"
+	"github.com/p9c/gio/io/system"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/unit"
 )
 
 // Context carries the state needed by almost all layouts and widgets.

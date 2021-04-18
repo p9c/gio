@@ -9,9 +9,9 @@ import (
 	"math"
 	"testing"
 
-	"gioui.org/f32"
-	"gioui.org/layout"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
 )
 
 func TestFit(t *testing.T) {

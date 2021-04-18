@@ -5,9 +5,9 @@ package layout
 import (
 	"image"
 
-	"gioui.org/f32"
-	"gioui.org/op"
-	"gioui.org/unit"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/unit"
 )
 
 // Constraints represent the minimum and maximum size of a widget.

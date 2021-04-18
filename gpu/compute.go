@@ -12,14 +12,14 @@ import (
 	"time"
 	"unsafe"
 
-	"gioui.org/f32"
-	"gioui.org/gpu/internal/driver"
-	"gioui.org/internal/byteslice"
-	"gioui.org/internal/f32color"
-	"gioui.org/internal/ops"
-	"gioui.org/internal/scene"
-	"gioui.org/layout"
-	"gioui.org/op"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/gpu/internal/driver"
+	"github.com/p9c/gio/internal/byteslice"
+	"github.com/p9c/gio/internal/f32color"
+	"github.com/p9c/gio/internal/ops"
+	"github.com/p9c/gio/internal/scene"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
 )
 
 type compute struct {

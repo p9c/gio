@@ -19,21 +19,21 @@ import (
 	"time"
 	"unsafe"
 
-	"gioui.org/f32"
-	"gioui.org/gpu/internal/driver"
-	"gioui.org/internal/byteslice"
-	"gioui.org/internal/f32color"
-	"gioui.org/internal/opconst"
-	"gioui.org/internal/ops"
-	"gioui.org/internal/scene"
-	"gioui.org/internal/stroke"
-	"gioui.org/layout"
-	"gioui.org/op"
-	"gioui.org/op/clip"
+	"github.com/p9c/gio/f32"
+	"github.com/p9c/gio/gpu/internal/driver"
+	"github.com/p9c/gio/internal/byteslice"
+	"github.com/p9c/gio/internal/f32color"
+	"github.com/p9c/gio/internal/opconst"
+	"github.com/p9c/gio/internal/ops"
+	"github.com/p9c/gio/internal/scene"
+	"github.com/p9c/gio/internal/stroke"
+	"github.com/p9c/gio/layout"
+	"github.com/p9c/gio/op"
+	"github.com/p9c/gio/op/clip"
 
 	// Register backends.
-	_ "gioui.org/gpu/internal/d3d11"
-	_ "gioui.org/gpu/internal/opengl"
+	_ "github.com/p9c/gio/gpu/internal/d3d11"
+	_ "github.com/p9c/gio/gpu/internal/opengl"
 )
 
 type GPU interface {
